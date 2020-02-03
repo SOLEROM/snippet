@@ -1,0 +1,17 @@
+===================
+main::wrk2 start
+wrk2::run init
+wrk2::run start
+ main::wrk2 started wrk2::run run + value = 1
+
+wrk2::run run + value = 1
+wrk2::run run + value = 1
+main::wrk2 setValue
+ wrk2::run run + value = 1
+wrk2::run run + value = 2
+wrk2::run run + value = 2
+wrk2::run run + value = 2
+main::wrk2 send-terminate
+main::wrk2 end
+wrk2::run ended
+

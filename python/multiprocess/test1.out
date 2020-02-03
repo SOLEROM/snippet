@@ -1,0 +1,23 @@
+main::wrk1 start
+wrk1::run init
+main::wrk1 started 
+wrk1::run start
+wrk1::run run
+wrk1::run run
+wrk1::run run
+wrk1::run run
+main::wrk1 send-terminate
+main::wrk1 end
+===================
+main::wrk2 start
+wrk2::run init
+wrk2::run start
+ main::wrk2 started 
+wrk2::run run
+wrk2::run run
+wrk2::run run
+main::wrk2 send-terminate
+ main::wrk2 end
+wrk2::run run
+wrk2::run ended
+
