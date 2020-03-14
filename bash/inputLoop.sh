@@ -1,5 +1,7 @@
 #!/bin/bash
 
+POSITIONAL=()
+
 while [[ $# -gt 0 ]]
 do
 key="$1"
@@ -14,8 +16,17 @@ case $key in
         shift # past value
         ;;	 
     *)  			#example3
-	echo else input
-    	shift # past argument
+	echo unknown option 
+	POSITIONAL+=("$1") # save it in an array for later
+   	shift # past argument
     	;;
 esac
 done
+
+
+set -- "${POSITIONAL[@]}" # restore positional parameters
+
+
+echo "rest input params"
+echo paramNum1=$1
+echo paramNum2=$2

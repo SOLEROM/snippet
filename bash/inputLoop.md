@@ -31,12 +31,13 @@ done
 
 ```
 ./inputLoop.sh aaa
-else input
+unknown option
+
 
 
 ./inputLoop.sh -a 1
 -a/-aaa with no params
-else input
+unknown option
 
 
 ./inputLoop.sh -a -b 4 
